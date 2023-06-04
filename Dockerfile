@@ -6,3 +6,5 @@ COPY redis_install.sh /home
 RUN sh /home/redis_install.sh
 
 ENTRYPOINT /usr/local/redis/bin/redis-server /usr/local/redis/conf/redis.conf
+
+EXPOSE 6379
